@@ -1,0 +1,17 @@
+{
+  "name": "Jonathan Javier",
+  "edited_booking": [
+    {
+      "location": "London, United Kingdon",
+      "room": "exclusive room",
+      "check_in": "17/01/2025",
+      "check_out": "22/01/2025",
+      "nights": 5,
+      "people": 1,
+      "meal_deal": "bed & breakfast",
+      "cost": "£175",
+      "reference_number": "FLH-942583716"
+    }
+  ]
+
+}

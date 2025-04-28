@@ -1,0 +1,40 @@
+{
+  "rooms":[
+    {
+      "name": "Standard room",
+      "location": "United Kingdom",
+      "price": 15,
+      "size": "20–30 sqm",
+      "bed": "single sized bed",
+      "audience_purpose": "quick refreshing stay",
+      "image": "standard hotel room.png"
+    },
+    {
+      "name": "Premium room",
+      "location": "United Kingdom",
+      "price": 18,
+      "size": "25–35 sqm",
+      "bed": "double sized bed",
+      "audience_purpose": "higher quality stay within the budget",
+      "image": "premium room.png"
+    },
+    {
+      "name": "Exclusive room",
+      "location": "United Kingdom",
+      "price": 25,
+      "size": "40–30 sqm",
+      "bed": "queen sized bed",
+      "audience_purpose": "exclusive above the standard experience",
+      "image": "exclusive hotel room.jpg"
+    },
+    {
+      "name": "Deluxe room",
+      "location": "United Kingdom",
+      "price": 30,
+      "size": "45–35 sqm sized bed",
+      "bed": "king",
+      "audience_purpose": "top-notch luxurious stay",
+      "image": "deluxe room.jpg"
+    }
+  ]
+}
