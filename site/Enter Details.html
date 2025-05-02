@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flora Hotels</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="Home.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="Deals.html">Deals</a>
+                        <a class="nav-link" href="Manage Booking Login.html">Managing Bookings</a>
+                        <a class="nav-link" href="About Us.html">About Us</a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="img/FLORA HOTELS LOGO.png" width="156" height="183" alt="Flora Hotels Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </header>
+        <main style="padding:50px;">
+            <p style="font-size:31px">Enter Details</p>
+            <hr style="border: 1px solid black; width: 100%; margin: 60px 0;">
+
+            <div class="alert alert-light" role="alert" style="position:fixed; top: 380px; left: 10%; right: 0; width: 80%; z-index: 9999; border-color: rgb(127, 144, 255); text-align: center;">
+                <p style="font-size:30px;color: black;">Error: <br> Required Field has been <br>left empty</p>
+                <div style="display: flex; justify-content: center;">
+                    <form action="Enter Details.html">
+                        <button type="submit" class="btn btn-primary btn-lg">Ok</button>
+                    </form>
+                </div>
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="validationCustom01">Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Name*" required>
+                    <div class="invalid-feedback">
+                        Please choose a name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom02">Address</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Address*" required>
+                    <div class="invalid-feedback">
+                        Please choose an address.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom03">Email</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Enter Email Address*" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid email.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom04">Mobile Number</label>
+                    <input type="number" class="form-control" id="validationCustom04" placeholder="Enter Mobile Number*" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid mobile number.
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <button type="submit" class="btn btn-primary btn-lg" formaction="Successfully Filled Payment Method.html">Continue</button>
+                </div>
+            </form>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script>
+            (function () {
+              'use strict';
+              window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var alertBox = document.querySelector('.alert');
+                alertBox.style.display = 'none';
+                Array.prototype.filter.call(forms, function (form) {
+                  form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      alertBox.style.display = 'block';
+                    } else {
+                      alertBox.style.display = 'none';
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+        </script>
+    </body>
+</html>
