@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flora Hotels</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href='/'>Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/Deals">Deals</a>
+                        <a class="nav-link" href="/login_booking">Managing Bookings</a>
+                        <a class="nav-link active" href="#">About Us</a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="{{ url_for('static', filename='img/FLORA HOTELS LOGO.png') }}" width="156" height="183" alt="Flora Hotels Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <div class="about-us">
+                <h1>About Us</h1>
+                <img src="{{ url_for('static', filename='img/fancy hotel exterior.jpg') }}" alt="Flora Hotels' exterior" height="19%" width="88%"/>
+                <p>Flora Hotels self-imposed mission is to create a welcoming environment for people to stay in all around the world. Our aim isn't just to offer a temporary place to stay for our customers travelling plans but we want them to consider us like their second home! Through our top-notch services, staff and facilities we aim to exceed customers' satisfactions and standards </p>
+            </div>
+            <div class="food" id="continue-food">
+                <h2 style="margin-bottom: 60px; text-align:center;">Food and Drinks</h2>
+                <div class="container-food_drinks">
+                    <img src="{{ url_for('static', filename='img/hotel resturant.jpg') }}" alt="hotel resturant" style="height:100%;width:40%;">
+                    <p>Our in-doors hotel dining restaurants are equipped with international chefs to reproduce any cuisine and provide our customers with their typical home dishes! We want our customers to be reminded f home while consuming their main 3 meals of the day.</p>
+                </div>
+                <br>
+                <p>Our food is made with the most natural and nutritional ingredients as we care about our customer health. Every ingredient is from the country the hotel is residing in while following their necessary rules and regulations. We also can take into consideration any diet plans or allergies, provided that they were mentioned on the day of Check In. Drinks are included for every meal and can be picked up in the bar department.</p>
+            </div>
+            <div class="container-rooms" id="continue-room">
+                <h2>Our Rooms</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{ url_for('static', filename='img/standard hotel room2.png') }}" class="d-block w-100" alt="standard room">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ url_for('static', filename='img/premium room.png') }}" class="d-block w-100" alt="premium room">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ url_for('static', filename='img/exclusive hotel room.jpg') }}" class="d-block w-100" alt="exclusive room">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ url_for('static', filename='img/deluxe room.jpg') }}" class="d-block w-100" alt="deluxe room">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+                <p style="text-align:center;">Our rooms are furnished with the best quality of imports from Turkey and Italy. Each room has got a lush bathroom and a spacious balcony. Discounts and Promotions for the rooms can be found in our deals page!</p>
+            </div>
+            <div class="container-location" id="continue-location">
+                <h2 style="text-align:center;">Our Locations</h2>
+                <h3>List of Locations:</h3>
+                <ul>
+                    <li>United Kingdon</li>
+                    <li>Italy</li>
+                    <li>Germany</li>
+                    <li>Spain</li>
+                </ul>
+                <div class="button-parent">
+                    <button type="button" class="btn btn-primary btn-lg" style="width:48%">Click to scroll</button>
+                </div>
+                <p>Flora Hotels takes pride in possessing branches in some of the most famous locations worldwide. Our properties are always close to key attractions of the country to better your travel experience.</p>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>
